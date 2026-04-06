@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Georgia Mechanical Technical Troubleshooting Academy</title>
+  <style>
+    :root {
+      --navy: #14324a;
+      --steel: #4c6475;
+      --slate: #dfe7ec;
+      --white: #ffffff;
+      --ink: #16212b;
+      --gold: #d8a63a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #eef3f7 0%, #ffffff 45%, #eef3f7 100%);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--navy), #204c6d);
+      color: var(--white);
+      padding: 56px 24px 40px;
+    }
+
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
+    .eyebrow {
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #b9d0e2;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .hero-copy p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 740px;
+    }
+
+    .hero-card,
+    .card {
+      background: var(--white);
+      border: 1px solid rgba(20, 50, 74, 0.08);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 14px 34px rgba(20, 50, 74, 0.08);
+    }
+
+    .hero-card {
+      color: var(--ink);
+    }
+
+    .accent {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    main {
+      padding: 32px 24px 56px;
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 24px 0 0;
+    }
+
+    .stat {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.8rem;
+      color: var(--white);
+    }
+
+    .band {
+      background: linear-gradient(120deg, #173650, #2f5979);
+      color: var(--white);
+      border-radius: 18px;
+      padding: 22px 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 14px 34px rgba(20, 50, 74, 0.12);
+    }
+
+    .band-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .band h2 {
+      margin-bottom: 12px;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+      margin: 16px 0 0;
+    }
+
+    .pill-list li {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 8px 12px;
+      border-radius: 999px;
+      margin-bottom: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #0f5d91;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .module-links a,
+    .resource-links a {
+      display: inline-block;
+      margin: 6px 0;
+    }
+
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .quick-links .card {
+      border-left: 6px solid var(--gold);
+    }
+
+    footer {
+      padding: 24px;
+      color: #5a6d7b;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 800px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">Georgia Mechanical Technical Troubleshooting Academy</div>
+        <h1>Advanced Manufacturing Troubleshooting Series</h1>
+        <p>Central access point for Georgia Mechanical training materials covering conveyor PLC troubleshooting, industrial HVAC control troubleshooting, and industrial chiller diagnostics.</p>
+        <div class="stats">
+          <div class="stat"><strong>3</strong>Core technical modules</div>
+          <div class="stat"><strong>15+</strong>Assets per module package</div>
+          <div class="stat"><strong>1</strong>Common troubleshooting standard</div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Program Standard</h2>
+        <p><span class="accent">Confirm the symptom.</span> Review the sequence. Identify the missing condition. Verify with data. Correct the cause. Verify the restart.</p>
+        <p><a href="handoff-package/README.md">Open handoff package index</a></p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="wrap">
+      <section class="band">
+        <h2>Quick Start</h2>
+        <div class="band-grid">
+          <div>
+            <h3>For facilitators</h3>
+            <p>Start with the module readme, Georgia Mechanical slide script, and facilitator guide.</p>
+          </div>
+          <div>
+            <h3>For supervisors</h3>
+            <p>Use the final exam, signoff rubric, coaching forms, and module observation checklists.</p>
+          </div>
+          <div>
+            <h3>For administrators</h3>
+            <p>Use the LMS shells, certificate template, implementation guide, and print templates.</p>
+          </div>
+        </div>
+        <ul class="pill-list">
+          <li>Evidence-based troubleshooting</li>
+          <li>Safe restart verification</li>
+          <li>Sequence-of-operation analysis</li>
+          <li>Supervisor signoff</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Role-Based Entry Points</h2>
+        <div class="quick-links">
+          <div class="card resource-links">
+            <h3>Facilitator Start Here</h3>
+            <a href="master-instructor-guide.md">Master instructor guide</a><br>
+            <a href="georgia-mechanical-master-implementation-guide.md">Master implementation guide</a><br>
+            <a href="handoff-package/02-module-packages/README.md">Module package handoff index</a>
+          </div>
+          <div class="card resource-links">
+            <h3>Supervisor Start Here</h3>
+            <a href="georgia-mechanical-final-exam-and-signoff.md">Final exam and signoff</a><br>
+            <a href="georgia-mechanical-supervisor-coaching-forms.md">Supervisor coaching forms</a><br>
+            <a href="handoff-package/03-assessment-and-supervision/README.md">Assessment and supervision index</a>
+          </div>
+          <div class="card resource-links">
+            <h3>Admin Start Here</h3>
+            <a href="georgia-mechanical-lms-course-shells.md">LMS course shells</a><br>
+            <a href="georgia-mechanical-branding-pack.md">Branding pack</a><br>
+            <a href="handoff-package/04-print-and-brand-assets/README.md">Print and brand index</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Modules</h2>
+        <div class="grid">
+          <div class="card module-links">
+            <h3>Conveyor System Electrical and PLC Troubleshooting</h3>
+            <p>Sequence-based fault isolation for conveyor no-start and no-restart events.</p>
+            <a href="conveyor-plc-troubleshooting-module/README.md">Open package index</a><br>
+            <a href="conveyor-plc-troubleshooting-module/12-georgia-mechanical-slide-script.md">Georgia Mechanical slide script</a><br>
+            <a href="conveyor-plc-troubleshooting-module/13-georgia-mechanical-facilitator-guide.md">Facilitator guide</a><br>
+            <a href="conveyor-plc-troubleshooting-module/15-supervisor-observation-checklist.md">Supervisor checklist</a>
+          </div>
+          <div class="card module-links">
+            <h3>Industrial HVAC Electrical and Control Troubleshooting</h3>
+            <p>Control-path troubleshooting for BAS-driven HVAC no-start conditions.</p>
+            <a href="industrial-hvac-troubleshooting-module/README.md">Open package index</a><br>
+            <a href="industrial-hvac-troubleshooting-module/12-georgia-mechanical-slide-script.md">Georgia Mechanical slide script</a><br>
+            <a href="industrial-hvac-troubleshooting-module/13-georgia-mechanical-facilitator-guide.md">Facilitator guide</a><br>
+            <a href="industrial-hvac-troubleshooting-module/15-supervisor-observation-checklist.md">Supervisor checklist</a>
+          </div>
+          <div class="card module-links">
+            <h3>Industrial Chiller Control and Diagnostics</h3>
+            <p>Protected-equipment diagnostics using alarm logic, sensor plausibility, and field verification.</p>
+            <a href="industrial-chiller-diagnostics-module/README.md">Open package index</a><br>
+            <a href="industrial-chiller-diagnostics-module/12-georgia-mechanical-slide-script.md">Georgia Mechanical slide script</a><br>
+            <a href="industrial-chiller-diagnostics-module/13-georgia-mechanical-facilitator-guide.md">Facilitator guide</a><br>
+            <a href="industrial-chiller-diagnostics-module/15-supervisor-observation-checklist.md">Supervisor checklist</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Program Resources</h2>
+        <div class="grid">
+          <div class="card resource-links">
+            <h3>Rollout and Administration</h3>
+            <a href="georgia-mechanical-master-implementation-guide.md">Master implementation guide</a><br>
+            <a href="georgia-mechanical-lms-course-shells.md">LMS course shells</a><br>
+            <a href="master-instructor-guide.md">Master instructor guide</a><br>
+            <a href="reach-launch-kit/README.md">Reach launch kit</a><br>
+            <a href="reach-launch-kit/06-conveyor-rise-click-by-click-build-guide.md">Conveyor click-by-click Rise guide</a><br>
+            <a href="reach-launch-kit/07-hvac-rise-click-by-click-build-guide.md">HVAC click-by-click Rise guide</a><br>
+            <a href="reach-launch-kit/08-chiller-rise-click-by-click-build-guide.md">Chiller click-by-click Rise guide</a><br>
+            <a href="reach-launch-kit/09-final-assessment-reach-setup-guide.md">Final assessment Reach setup guide</a>
+          </div>
+          <div class="card resource-links">
+            <h3>Assessment and Signoff</h3>
+            <a href="capstone-troubleshooting-assessment.md">Capstone troubleshooting assessment</a><br>
+            <a href="georgia-mechanical-final-exam-and-signoff.md">Final exam and supervisor signoff</a><br>
+            <a href="georgia-mechanical-supervisor-coaching-forms.md">Supervisor coaching forms</a>
+          </div>
+          <div class="card resource-links">
+            <h3>Brand and Print Templates</h3>
+            <a href="georgia-mechanical-branding-pack.md">Branding pack</a><br>
+            <a href="georgia-mechanical-certificate-template.md">Certificate copy template</a><br>
+            <a href="print-templates/georgia-mechanical-certificate-template.html">Print-ready certificate HTML</a><br>
+            <a href="handoff-package/04-print-and-brand-assets/README.md">Print-ready asset index</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    Georgia Mechanical training portal page for internal rollout and content access.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Detectives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2.0.0">
+  <script>
+    window.__riseRuntimePayload = null;
+    window.__jsonp = function(name, payload) {
+      if (name === "runtime-data.js") {
+        window.__riseRuntimePayload = payload;
+      }
+    };
+  </script>
+  <script src="runtime-data.js"></script>
+</head>
+<body>
+  <div class="background-photo" aria-hidden="true"></div>
+  <div class="background-glow" aria-hidden="true"></div>
+  <div id="celebration-layer" class="celebration-layer" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <header class="hero-card">
+      <div class="hero-copy">
+        <p class="eyebrow">Lesson Pages • Paginas de lecciones</p>
+        <h1 id="course-title">Text Detectives</h1>
+        <p id="course-subtitle" class="subtitle">Each lesson is split into five pages with bilingual supports and a detective-point reward to unlock the next page. / Cada leccion se divide en cinco paginas con apoyo bilingue y una recompensa de puntos de detective para desbloquear la siguiente pagina.</p>
+        <div class="hero-actions">
+          <label class="lesson-jump-label" for="lesson-jump">Jump to lesson / Ir a leccion</label>
+          <div class="lesson-jump-row">
+            <select id="lesson-jump" class="lesson-jump-select" aria-label="Jump to lesson / Ir a leccion"></select>
+            <button id="lesson-jump-btn" class="lesson-jump-btn" type="button">Go / Ir</button>
+          </div>
+        </div>
+      </div>
+      <aside class="scoreboard" aria-label="Lesson progress / Progreso de la leccion">
+        <div class="score-box">
+          <p class="score-label">Current Page / Pagina actual</p>
+          <p class="score-value"><span id="current-page">1</span>/<span id="total-pages">1</span></p>
+        </div>
+        <div class="score-box">
+          <p class="score-label">Pages Unlocked / Paginas desbloqueadas</p>
+          <p class="score-value" id="completed-pages">0</p>
+        </div>
+        <div class="score-box">
+          <p class="score-label">Detective Points / Puntos de detective</p>
+          <p class="score-value" id="detective-points">0</p>
+        </div>
+        <div class="score-box">
+          <p class="score-label">Status / Estado</p>
+          <p class="status-value" id="page-status">Click the reward button at the bottom to continue. / Haz clic en el boton de recompensa al final para continuar.</p>
+        </div>
+      </aside>
+    </header>
+
+    <section id="lesson-stage" class="lesson-stage" aria-live="polite"></section>
+
+    <nav class="lesson-nav" aria-label="Page navigation / Navegacion de paginas">
+      <button id="prev-btn" type="button">Previous Page / Pagina anterior</button>
+      <button id="next-btn" type="button">Next Page / Pagina siguiente</button>
+    </nav>
+  </main>
+
+  <script src="script.js?v=2.0.0"></script>
+</body>
+</html>

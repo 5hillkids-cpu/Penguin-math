@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="Cartoon penguin">
+  <defs>
+    <linearGradient id="belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e9f6ff"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f4f73"/>
+      <stop offset="1" stop-color="#1c3550"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="110" cy="190" rx="64" ry="14" fill="#7aa5c4" opacity="0.28"/>
+
+  <ellipse cx="110" cy="116" rx="64" ry="76" fill="url(#body)"/>
+  <ellipse cx="110" cy="125" rx="43" ry="52" fill="url(#belly)"/>
+
+  <ellipse cx="58" cy="118" rx="18" ry="34" fill="#244362" transform="rotate(-22 58 118)"/>
+  <ellipse cx="162" cy="118" rx="18" ry="34" fill="#244362" transform="rotate(22 162 118)"/>
+
+  <circle cx="110" cy="70" r="42" fill="url(#body)"/>
+  <ellipse cx="92" cy="72" rx="9" ry="12" fill="#ffffff"/>
+  <ellipse cx="128" cy="72" rx="9" ry="12" fill="#ffffff"/>
+  <circle cx="94" cy="74" r="4" fill="#13263b"/>
+  <circle cx="126" cy="74" r="4" fill="#13263b"/>
+
+  <polygon points="110,84 94,94 110,100 126,94" fill="#ffa043"/>
+
+  <ellipse cx="86" cy="178" rx="20" ry="10" fill="#ff9f47"/>
+  <ellipse cx="134" cy="178" rx="20" ry="10" fill="#ff9f47"/>
+
+  <circle cx="146" cy="56" r="5" fill="#ffffff" opacity="0.42"/>
+</svg>

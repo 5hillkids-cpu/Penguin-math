@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Designer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="texture texture-grid" aria-hidden="true"></div>
+  <div class="texture texture-glow" aria-hidden="true"></div>
+
+  <main class="portfolio-shell">
+    <header class="hero-card panel">
+      <div class="hero-copy">
+        <p class="eyebrow" data-editable="eyebrow" contenteditable="true">Curriculum Designer Portfolio</p>
+        <h1 data-editable="headline" contenteditable="true">Designing learning experiences that feel clear, human, and memorable.</h1>
+        <p class="hero-summary" data-editable="summary" contenteditable="true">Edit every headline, paragraph, and card directly on the page. This portfolio is built for showcasing curriculum systems, lesson architecture, student engagement strategy, and cross-functional design work.</p>
+      </div>
+
+      <aside class="editor-tools panel-inset">
+        <p class="tool-label">Editing Controls</p>
+        <p class="tool-copy">Click any text block to rewrite it. Your changes save in this browser.</p>
+        <div class="tool-actions">
+          <button id="save-btn" type="button">Save Changes</button>
+          <button id="reset-btn" type="button">Reset Layout</button>
+        </div>
+        <section class="editor-section" aria-label="Visual style editor">
+          <p class="tool-label">Visual Editor</p>
+          <div class="control-grid">
+            <label class="control-field">
+              <span>Body Font</span>
+              <select id="body-font-control">
+                <option value="Manrope, sans-serif">Manrope</option>
+                <option value="Inter, sans-serif">Inter</option>
+                <option value="Arial, sans-serif">Arial</option>
+              </select>
+            </label>
+            <label class="control-field">
+              <span>Heading Font</span>
+              <select id="heading-font-control">
+                <option value="'DM Serif Display', serif">DM Serif Display</option>
+                <option value="Fraunces, serif">Fraunces</option>
+                <option value="Georgia, serif">Georgia</option>
+              </select>
+            </label>
+            <label class="control-field">
+              <span>Background</span>
+              <input id="bg-color-control" type="color" value="#07182f">
+            </label>
+            <label class="control-field">
+              <span>Accent</span>
+              <input id="accent-color-control" type="color" value="#f1bf67">
+            </label>
+            <label class="control-field">
+              <span>Text Color</span>
+              <input id="text-color-control" type="color" value="#eef5ff">
+            </label>
+            <label class="control-field">
+              <span>Panel Color</span>
+              <input id="panel-color-control" type="color" value="#08182f">
+            </label>
+            <label class="control-field">
+              <span>Card Gap</span>
+              <input id="gap-control" type="range" min="10" max="40" step="1" value="18">
+            </label>
+            <label class="control-field">
+              <span>Corner Radius</span>
+              <input id="radius-control" type="range" min="12" max="36" step="1" value="28">
+            </label>
+            <label class="control-field">
+              <span>Page Width</span>
+              <input id="width-control" type="range" min="900" max="1400" step="10" value="1180">
+            </label>
+            <label class="control-field">
+              <span>Card Columns</span>
+              <select id="columns-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+              </select>
+            </label>
+          </div>
+        </section>
+        <p id="save-status" class="save-status">Ready to edit.</p>
+      </aside>
+    </header>
+
+    <section class="intro-band panel">
+      <div>
+        <p class="section-label">Profile</p>
+        <p data-editable="profile" contenteditable="true">I build standards-aligned instructional experiences, interactive lessons, pacing guides, and teacher-facing supports that turn complex goals into teachable moments.</p>
+      </div>
+      <div>
+        <p class="section-label">Focus Areas</p>
+        <p data-editable="focus" contenteditable="true">Learning design, bilingual supports, scope and sequence planning, engagement systems, student-friendly assessment, and polished visual storytelling.</p>
+      </div>
+    </section>
+
+    <section class="card-grid" aria-label="Portfolio highlights">
+      <article class="feature-card panel accent-a" data-card-id="card-1">
+        <div class="card-toolbar">
+          <button class="move-card-btn" type="button" data-move-card="left">Move Left</button>
+          <button class="move-card-btn" type="button" data-move-card="right">Move Right</button>
+        </div>
+        <p class="section-label">Box One</p>
+        <h2 data-editable="card1-title" contenteditable="true">Flagship Learning Projects</h2>
+        <p data-editable="card1-body" contenteditable="true">Use this box to describe signature curriculum work such as a literacy unit redesign, bilingual lesson sequence, assessment overhaul, or a digital course build.</p>
+        <ul class="tag-list">
+          <li data-editable="card1-tag1" contenteditable="true">Unit Mapping</li>
+          <li data-editable="card1-tag2" contenteditable="true">Interactive Lessons</li>
+          <li data-editable="card1-tag3" contenteditable="true">Standards Alignment</li>
+        </ul>
+      </article>
+
+      <article class="feature-card panel accent-b" data-card-id="card-2">
+        <div class="card-toolbar">
+          <button class="move-card-btn" type="button" data-move-card="left">Move Left</button>
+          <button class="move-card-btn" type="button" data-move-card="right">Move Right</button>
+        </div>
+        <p class="section-label">Box Two</p>
+        <h2 data-editable="card2-title" contenteditable="true">Design Process</h2>
+        <p data-editable="card2-body" contenteditable="true">Use this box to explain how you research learner needs, define outcomes, prototype lesson flow, gather teacher feedback, and revise materials for clarity and access.</p>
+        <ul class="tag-list">
+          <li data-editable="card2-tag1" contenteditable="true">Research</li>
+          <li data-editable="card2-tag2" contenteditable="true">Iteration</li>
+          <li data-editable="card2-tag3" contenteditable="true">Accessibility</li>
+        </ul>
+      </article>
+
+      <article class="feature-card panel accent-c" data-card-id="card-3">
+        <div class="card-toolbar">
+          <button class="move-card-btn" type="button" data-move-card="left">Move Left</button>
+          <button class="move-card-btn" type="button" data-move-card="right">Move Right</button>
+        </div>
+        <p class="section-label">Box Three</p>
+        <h2 data-editable="card3-title" contenteditable="true">Impact + Contact</h2>
+        <p data-editable="card3-body" contenteditable="true">Use this box to share measurable outcomes, collaboration wins, and a short invitation for schools, edtech teams, or nonprofits to reach out.</p>
+        <div class="contact-block">
+          <p class="contact-label">Contact</p>
+          <p data-editable="contact" contenteditable="true">name@example.com | Portfolio Link | LinkedIn</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
